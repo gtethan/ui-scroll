@@ -1,0 +1,69 @@
+{
+  "name": "angular-ui-scroll",
+  "description": "AngularJS infinite scrolling module",
+  "version": "1.7.6",
+  "src": "./src/",
+  "public": "./dist/",
+  "main": "./dist/ui-scroll.js",
+  "homepage": "https://github.com/angular-ui/ui-scroll",
+  "author": {
+    "name": "Michael Feingold",
+    "email": "mfeingold@hill30.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular-ui/ui-scroll.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angular-ui/ui-scroll/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "prod-build": "webpack --color",
+    "prod-test": "karma start test/config/karma.conf.js",
+    "dev-server": "webpack-dev-server --color",
+    "dev-test": "karma start test/config/karma.conf.js",
+    "hint-test": "jshint --verbose test",
+    "hint-src": "jshint --verbose src",
+    "build": "npm run hint-src && npm run prod-build && npm run hint-test && npm run prod-test",
+    "dev": "npm-run-all --parallel dev-server dev-test",
+    "test": "npm run dev-test",
+    "start": "npm run dev-server"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^5.1.1",
+    "jasmine-core": "^2.8.0",
+    "jshint": "^2.10.1",
+    "karma": "^4.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^3.0.5",
+    "npm-run-all": "^4.1.2",
+    "terser-webpack-plugin": "^2.3.0",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "angular.ui",
+    "angular-ui",
+    "ui.scroll",
+    "ui-scroll",
+    "angular-ui-scroll",
+    "unlimited",
+    "infinite",
+    "live",
+    "perpetual",
+    "scroll",
+    "scroller",
+    "scrolling"
+  ]
+}
